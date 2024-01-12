@@ -171,10 +171,10 @@ const Home = () => {
             <Typography style={titleStyleh2}>
               Contact
             </Typography>
-            <StyledButton variant="contained" href="mailto:ton@email.com" endIcon={<ArrowOutwardIcon />}>
+            <StyledButton variant="contained" href="mailto:arthur.biet@gmail.com" endIcon={<ArrowOutwardIcon />}>
               Envoyer un mail
             </StyledButton>
-            <StyledButton variant="contained" href="tel:+1234567890"  endIcon={<ArrowOutwardIcon />}>
+            <StyledButton variant="contained" href="tel:0628767192"  endIcon={<ArrowOutwardIcon />}>
               Appeler
             </StyledButton>
           </StyledBox>
