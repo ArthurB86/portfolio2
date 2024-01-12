@@ -11,14 +11,16 @@ import MenuItem from '@mui/material/MenuItem';
 import CustomizedSwitches from '../Switches';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import {  useNavigate } from 'react-router-dom';
 
-
+const pages = ['Home', 'Information'];
 
 function ResponsiveAppBar({ handleChange }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const theme = useTheme();
   const isSmallScreen = useMediaQuery('(max-width:900px)');
-  
+  const navigate = useNavigate();
+
   const backgroundStyle = {
     backgroundColor: theme.palette.mode === 'dark' ? theme.palette.dark.background : theme.palette.light.background,
     color: theme.palette.mode === 'dark' ? theme.palette.dark.text : theme.palette.light.text,
@@ -42,18 +44,9 @@ function ResponsiveAppBar({ handleChange }) {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-  const sections = [
-    { id: 'about', label: 'À propos' },
-    { id: 'projects', label: 'Projets' },
-    { id: 'contact', label: 'Contact' },
-  ];
-  
-  const handleScrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-  
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleMenuClick = (page) => {
+    handleCloseNavMenu();
+    navigate(`/${page.toLowerCase()}`); // Utilisez la fonction navigate pour rediriger vers la page correspondante
   };
   return (
     <AppBar
@@ -107,11 +100,11 @@ function ResponsiveAppBar({ handleChange }) {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-             {sections.map((section) => (
-  <MenuItem key={section.id} onClick={() => { handleScrollToSection(section.id); handleCloseNavMenu(); }}>
-    {section.label}
-  </MenuItem>
-))}
+                {pages.map((page) => (
+                  <MenuItem key={page} onClick={() => handleMenuClick(page)}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                ))}
             </Menu>
           </Box>
           <Box sx={{

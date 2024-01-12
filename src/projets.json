@@ -4,6 +4,11 @@
       "image": "Kasa.png",
       "link": "https://github.com/ArthurB86/P6-Creez-une-application-web-de-location-immobiliere-avec-React",
       "description": "Développement d'une application web avec Réact",
+      "explication": [
+        "- Application réactive pour l'agence Kasa avec React.",
+        "-  Création de composants animés (menu, carrousel).",
+        "- Acquisition de compétences en utilisation de JSX, Sass et exploration des hooks React."
+      ],
       "category": "Projet d'étude",
       "Logo1": "react.png",
       "Logo2":"js.svg",
@@ -14,6 +19,10 @@
       "image": "VieuxGrimoire.png",
       "link": "https://github.com/ArthurB86/Projet7Openclassrooms",
       "description": "Développement du back-end d'un site web ",
+      "explication": [
+        "- Backend pour 'Mon Vieux Grimoire' : API CRUD avec Node.js, Express.js, MongoDB.",
+        "- Gestion utilisateurs, sécurité des mots de passe avec Mongoose."
+      ],
       "category": "Projet d'étude",
       "Logo1": "react.png",
       "Logo2":"js.svg",
@@ -23,9 +32,14 @@
     },
     {
       "title": "Sophie Bluel",
-      "image": " sophie.png",
+      "image": " sophie.jpg",
       "link": "https://github.com/ArthurB86/P3-Openclassrooms",
       "description": "Utilisation du Javascript pour rendre un site web dynamique",
+      "explication": [
+        "- Rendu dynamique du site portfolio de l'architecte Sophie Bluel avec JavaScript.",
+        "- Utilisation d'une API pour la connexion, récupération de projets, filtrage de galerie et gestion modale.",
+        "- Acquisition de compétences significatives en JavaScript."
+      ],
       "category": "Projet d'étude",
       "Logo1": "css.png",
       "Logo2":"js.svg",

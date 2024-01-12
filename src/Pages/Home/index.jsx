@@ -130,7 +130,7 @@ const Home = () => {
          backgroundSize: 'cover',
          width: isSmallScreen ? '100%' : '15%',}}>
 </StyledBox>
-        <StyledBox style={aPropos} id="about">
+        <StyledBox style={aPropos}>
           <Typography style={titleStyleh2} >
             À propos
           </Typography>
@@ -167,7 +167,7 @@ const Home = () => {
     backgroundSize: 'cover',
     width: isSmallScreen ? '100%' : '100%',}}>
 </StyledBox>
-          <StyledBox style={contactStyle} id="contact">
+          <StyledBox style={contactStyle}>
             <Typography style={titleStyleh2}>
               Contact
             </Typography>
@@ -180,7 +180,7 @@ const Home = () => {
           </StyledBox>
         </Box>
 
-        <StyledBox style={projetsStyle} id="projects">
+        <StyledBox style={projetsStyle}>
           <Typography style={titleStyleh2} >
             Projets
           </Typography>
