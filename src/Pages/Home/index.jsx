@@ -158,7 +158,7 @@ const Home = () => {
             <StyledButton variant="contained" target="_blank" href='https://github.com/ArthurB86' endIcon={<ArrowOutwardIcon />}>
               Github
             </StyledButton>
-            <StyledButton variant="contained"  endIcon={<ArrowOutwardIcon />}>
+            <StyledButton variant="contained" target="blank" href='www.linkedin.com/in/arthur-biet-7871182aa' endIcon={<ArrowOutwardIcon />}>
               Linkedin
             </StyledButton>
           </StyledBox>
