@@ -108,13 +108,7 @@ const Home = () => {
     flexDirection: 'row',
   };
 
-  const animation ={
-    hover: {
-      scale: 1.1,
-      transition: { type: 'spring', bounce: 0.6 },
-    },
-    
-  }
+
 
   return (
     <div style={section1Style}>
@@ -137,14 +131,8 @@ const Home = () => {
           <Typography>
             Bonjour, je suis un développeur web français, vivant à Poitiers. Passionné par le développement web et le design, j'adore explorer de nouvelles technologies web et je suis toujours en quête de nouvelles compétences à acquérir.
           </Typography>
-          <StyledButton variant="contained" href={`${process.env.PUBLIC_URL}/test.pdf`} target="_blank" >
+          <StyledButton variant="contained" href={`${process.env.PUBLIC_URL}/test.pdf`} target="_blank" endIcon={<ArrowOutwardIcon />} >
             En savoir plus
-            <motion.div
-      whileHover="hover" variants={animation}
-     >
-       <ArrowOutwardIcon />
-     </motion.div>
-            
           </StyledButton>
         </StyledBox>
       </Box>
