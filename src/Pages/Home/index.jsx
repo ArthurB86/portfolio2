@@ -6,15 +6,12 @@ import ActionAreaCard from '../../Components/Card';
 import styled from '@emotion/styled';
 import projectsData from '../../projets.json';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { motion } from 'framer-motion'
 import StyledBox from '../../Components/StyledBox';
 import Svg from '../../assets/map.svg';
-
 
 const Home = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery('(max-width:900px)');
-
 
   const titleStyleh1 = {
     color: theme.palette[theme.palette.mode].text,
@@ -111,7 +108,7 @@ const Home = () => {
 
 
   return (
-    <div style={section1Style}>
+<div style={section1Style}>
       <Box style={{ ...section1Style, ...introStyle }}>
         <StyledBox style={test2}>
           <Typography style={titleStyleh1}>
@@ -131,7 +128,7 @@ const Home = () => {
           <Typography>
             Bonjour, je suis un développeur web français, vivant à Poitiers. Passionné par le développement web et le design, j'adore explorer de nouvelles technologies web et je suis toujours en quête de nouvelles compétences à acquérir.
           </Typography>
-          <StyledButton variant="contained" href={`${process.env.PUBLIC_URL}/test.pdf`} target="_blank" endIcon={<ArrowOutwardIcon />} >
+          <StyledButton variant="contained" href={`${process.env.PUBLIC_URL}/CV_ARTHUR_BIET.pdf`} target="_blank" endIcon={<ArrowOutwardIcon />} >
             En savoir plus
           </StyledButton>
         </StyledBox>
@@ -186,6 +183,7 @@ const Home = () => {
         </StyledBox>
       </Box>
     </div>
+
   );
 }
 
